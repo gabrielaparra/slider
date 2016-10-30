@@ -1,0 +1,67 @@
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+	/*top of the page and at the center*/
+}
+
+#title {
+	text-align: center;
+	background-color: #F0F0F0;
+	font-family: sans-serif;
+	border-radius: 10px;
+}
+
+#title > h1 {
+	padding: 5px;
+}
+
+#slider {
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	/*shows only one image at a time*/
+	margin: 30px auto;
+	/*Sets margin-top to 30 px and the rest in auto\
+	centering the element.*/
+}
+
+#slider > Img {
+	width: 600px;
+	height: 400px;
+	float: left;
+	display: none;
+	/*The images are not displayed initially, but fade in later as a jQuery action*/
+}
+
+a {
+	font-family: sans-serif;
+	padding: 5px 10px;
+	background-color: #F0F0F0;
+	margin-top: 30px;
+	text-decoration: none;
+	color: #666;
+	border-radius: 5px;
+}
+
+a:hover {
+	color: orange;
+}
+
+a.left {
+	float: left;
+}
+
+a.right {
+	float: right;
+}
+
+a#stop {
+	display: inline-block;
+	margin-left: 155px;
+}
+
+a#resume {
+	display: inline-block;
+	float: right;
+	margin-right: 155px;
+}
