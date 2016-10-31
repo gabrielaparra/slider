@@ -55,13 +55,13 @@ a.right {
 	float: right;
 }
 
-a#stop {
-	display: inline-block;
-	margin-left: 155px;
+#button {
+	width: 100px;
+	margin: 0 auto;
 }
 
-a#resume {
+#play-pause {
+	width: 100px;
+	height: 100px;
 	display: inline-block;
-	float: right;
-	margin-right: 155px;
 }

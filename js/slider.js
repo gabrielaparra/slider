@@ -23,7 +23,7 @@ function startSlider() {
 		$("#slider > Img#" + sliderNext).fadeIn(300);
 
 		sliderInt = sliderNext;
-		sliderNext = sliderNext+1;
+		sliderNext += 1;
 
 	}, 3000)
 
@@ -59,7 +59,7 @@ function showSlide(id) {
 	startSlider();
 }
 
-$("slider > Img").hover(
+$("#slider > Img").hover(
 	function() {
 		stopLoop();
 	},
