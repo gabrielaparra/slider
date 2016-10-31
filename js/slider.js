@@ -67,3 +67,26 @@ $("#slider > Img").hover(
 		startSlider();
 	}
 )
+
+$(document).on('click', '#button-stop' ,function() {
+	var elm = $(this).attr('id');
+	stopLoop();
+	$(this).attr('id', "button-play");
+	
+});
+
+$(document).on('click', '#button-play' ,function() {
+	var elm = $(this).attr('id');
+	startSlider();
+	$(this).attr('id', "button-stop");
+	
+});
+
+$('#play-pause').hover(
+	function () {
+		$(this).attr('src', "images/play-pause-2.png");
+	}
+	, function() {
+		$(this).attr('src', "images/play-pause.png");
+	}
+);
